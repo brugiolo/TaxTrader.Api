@@ -5,9 +5,9 @@ using TaxTrader.Business.Interface;
 
 namespace TaxTrader.Api.Controllers
 {
+    [Route("[controller]")]
     [ApiController]
-    [Route("api/[controller]")]
-    public class TaxaJurosController : Controller
+    public class TaxaJurosController : ControllerBase
     {
         private readonly ITaxaJurosService _taxaJurosService;
 
@@ -16,6 +16,7 @@ namespace TaxTrader.Api.Controllers
             _taxaJurosService = taxaJurosService;
         }
 
+        [HttpGet("taxajuros")]
         public async Task<ActionResult<TaxaJurosViewModel>> TaxaJuros()
         {
             var valorTaxaJuros = await _taxaJurosService.Obter();
