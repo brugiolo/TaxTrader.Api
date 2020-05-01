@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TaxTrader.Api.Configuration;
+using AutoMapper;
 
 namespace TaxTrader.Api
 {
@@ -21,6 +22,8 @@ namespace TaxTrader.Api
             services.AddControllers();
 
             services.ConfigurarSwagger();
+
+            services.AddAutoMapper(typeof(Startup));
 
             services.ResolverDependencias();
         }

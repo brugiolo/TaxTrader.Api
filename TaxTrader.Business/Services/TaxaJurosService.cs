@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using TaxTrader.Business.Interface;
+using TaxTrader.Business.Models;
 
 namespace TaxTrader.Business.Services
 {
@@ -12,11 +13,11 @@ namespace TaxTrader.Business.Services
             _taxaJurosRepositorio = taxaJurosRepositorio;
         }
 
-        public async Task<decimal> Obter()
+        public async Task<TaxaJuros> Obter()
         {
-            var valorTaxaJuros = await _taxaJurosRepositorio.Obter();
+            var taxaJuros = await _taxaJurosRepositorio.Obter();
 
-            return valorTaxaJuros;
+            return taxaJuros;
         }
     }
 }
