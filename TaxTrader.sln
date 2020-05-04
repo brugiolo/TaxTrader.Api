@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxTrader.Data", "TaxTrader
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxTrader.Sandbox", "TaxTrader.Sandbox\TaxTrader.Sandbox.csproj", "{E0C76FE4-5BB3-4D7D-883C-BC39EB50095F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxTrader.Tests", "TaxTrader.Tests\TaxTrader.Tests.csproj", "{01C41455-F992-4089-9D9D-82F8CAB8CDC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxTrader.Tests", "TaxTrader.Tests\TaxTrader.Tests.csproj", "{01C41455-F992-4089-9D9D-82F8CAB8CDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxTrader.IntegrationTestes", "TaxTrader.IntegrationTestes\TaxTrader.IntegrationTestes.csproj", "{CF52E1A2-15E7-4AAD-8C18-9E2A8AF50EBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{01C41455-F992-4089-9D9D-82F8CAB8CDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01C41455-F992-4089-9D9D-82F8CAB8CDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01C41455-F992-4089-9D9D-82F8CAB8CDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF52E1A2-15E7-4AAD-8C18-9E2A8AF50EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF52E1A2-15E7-4AAD-8C18-9E2A8AF50EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF52E1A2-15E7-4AAD-8C18-9E2A8AF50EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF52E1A2-15E7-4AAD-8C18-9E2A8AF50EBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
