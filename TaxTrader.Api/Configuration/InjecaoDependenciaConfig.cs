@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 using TaxTrader.Business.Interface;
 using TaxTrader.Business.Services;
 using TaxTrader.Data.Repository;
@@ -15,6 +17,8 @@ namespace TaxTrader.Api.Configuration
             services.AddScoped<ITaxaJurosService, TaxaJurosService>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            services.AddMediatR(Assembly.GetExecutingAssembly());
 
             services.AddSwaggerGen();
 
