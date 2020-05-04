@@ -17,7 +17,7 @@ namespace TaxTrader.Business.Services
             _mediator = mediator;
         }
 
-        public async Task<TaxaJuros> Obter()
+        public async Task<TaxTrader.Business.Models.TaxaJuros> Obter()
         {
             var taxaJuros = await _taxaJurosRepositorio.Obter();
 
